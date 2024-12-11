@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-        Vercel Setup
+        Vercel Setup Development
     </div>
   );
 }
