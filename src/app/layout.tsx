@@ -1,16 +1,37 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+// Import the Sen font styles
+const senSemiBold = localFont({
+  src: "./fonts/Sen-SemiBold.ttf",
+  variable: "--font-sen-semi-bold",
+  weight: "600", // Semi-Bold weight
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const senExtraBold = localFont({
+  src: "./fonts/Sen-ExtraBold.ttf",
+  variable: "--font-sen-extra-bold",
+  weight: "800", // Extra-Bold weight
+});
+
+const senMedium = localFont({
+  src: "./fonts/Sen-Medium.ttf",
+  variable: "--font-sen-medium",
+  weight: "500", // Medium weight
+});
+
+const senSemiSemiBold = localFont({
+  src: "./fonts/Sen-SemiBold.ttf",
+  variable: "--font-sen-semi-semi-bold",
+  weight: "700", // Semi-Semi-Bold weight
+});
+
+const senRegular = localFont({
+  src: "./fonts/Sen-Regular.ttf",
+  variable: "--font-sen-regular",
+  weight: "400", // Regular weight
 });
 
 export const metadata: Metadata = {
@@ -24,10 +45,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="customtheme" >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${senSemiBold.variable} ${senExtraBold.variable} ${senMedium.variable} ${senSemiSemiBold.variable} ${senRegular.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
