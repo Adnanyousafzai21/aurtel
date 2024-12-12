@@ -1,7 +1,11 @@
+import HeroCarusel from "./compoentes/HeroCarusel";
+import HeroSection from "./compoentes/HeroSection";
+
 export default function Home() {
   return (
-    <div>
-        Vercel Setup
+    <div className="w-full">
+     
+      <HeroSection />
     </div>
   );
 }
