@@ -1,9 +1,11 @@
 import HeroSection from "./compoentes/HeroSection";
 
-export default function Home() {
+const page = () => {
   return (
     <div className="w-full">
       <HeroSection />
     </div>
   );
 }
+
+export default page
