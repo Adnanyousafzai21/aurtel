@@ -5,12 +5,11 @@ type HeroCaruselProps = {
 }
 const HeroCarusel = ({ imageURL, text }: HeroCaruselProps) => {
   return (
-    <div className="relative h-[500px] lg:h-screen costumwidth2">
+    <div className="relative h-[500px] lg:h-[calc(100vh-112px)] costumwidth2">
       <Image
         src={imageURL}
         alt="Slide"
-        width={100}
-        height={100}
+        layout="fill"
         objectFit="cover"
       />
       <div className="absolute z-50 top-0 left-0 w-full h-full flex items-center justify-center ">

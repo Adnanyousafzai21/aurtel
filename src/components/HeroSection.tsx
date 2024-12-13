@@ -8,17 +8,17 @@ import { LeftArrowIcon, RightArrowIcon } from "../app/icons";
 
 const data = [{
   text: "Empowering growth: Contract solutions and expert insights for success.",
-  image: "/images/hero-1.png"
+  image: "/images/slider-1.png"
 }, {
   text: "Client-centered approach. Industry-leading results ",
-  image: "/images/hero-2.png"
+  image: "/images/slider-2.png"
 }, {
   text: "Transforming services into lasting partnership. ",
-  image: "/images/hero-3.png"
+  image: "/images/slider-3.png"
 },
 {
   text: "Contact Aurtel Consulting Group to see how our expertise can foster your business growth",
-  image: "/images/hero-4.png"
+  image: "/images/slider-4.png"
 },];
 
 type Props = {
@@ -44,12 +44,10 @@ const SamplePrevArrow = ({ className, onClick, type }: Props): JSX.Element => {
       onClick={onClick}
     >
       {type === "prev" ? (
-        //@ts-ignore
-        <RightArrowIcon width={20} height={20} fill="white" />
+        <RightArrowIcon width={60} height={60}  />
 
       ) : (
-        //@ts-ignore
-        <LeftArrowIcon width={20} height={20} fill="white" />
+        <LeftArrowIcon width={60} height={60}  />
       )}
     </div>
   );
@@ -78,8 +76,8 @@ const HeroSection = () => {
   }
   return (
     <>
-      <div className="lg:h-screen ">
-        <Slider {...settings} className="lg:h-screen custom-width">
+      <div className="lg:h-[calc(100vh-112px)] border">
+        <Slider {...settings} className="lg:h-full custom-width ">
           {data.map((items, index) => {
             return <HeroCarusel imageURL={items.image} text={items.text} key={index} />
           })}
