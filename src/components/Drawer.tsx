@@ -13,7 +13,7 @@ const Drawer = () => {
   };
 
   return (
-    <div className="drawer lg:drawer-open">
+    <div className="drawer lg:drawer-open relative z-50">
       <input id="menu-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-end justify-center">
         <label htmlFor="menu-drawer" className="btn btn-ghost">
