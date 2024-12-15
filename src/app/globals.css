@@ -53,12 +53,12 @@ body {
   width: 100% !important;
 }
 .slick-arrow{
-  position: relative;
+  /* position: relative; */
   top: 50%;
 }
 .slick-next{
   right: 2% !important;
-  z-index: 40;
+  z-index: 40 !important;
 
 }
 .slick-prev:before, .slick-next:before {
@@ -66,7 +66,7 @@ body {
 }
 .slick-prev {
   left: 2% !important;
-  z-index: 40;
+  z-index: 40 !important;
 }
 .slick-list{
   padding: 0 !important;
