@@ -65,14 +65,14 @@ const HeroSection = () => {
     waitForAnimate: false,
     prevArrow: <SamplePrevArrow type="prev" />, 
     nextArrow: <SamplePrevArrow type="next" />, 
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false, 
-        },
-      },
-    ],
+    // responsive: [
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       arrows: false, 
+    //     },
+    //   },
+    // ],
   }
   return (
     <>
