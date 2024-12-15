@@ -5,7 +5,7 @@ type HeroCaruselProps = {
 }
 const HeroCarusel = ({ imageURL, text }: HeroCaruselProps) => {
   return (
-    <div className="relative h-[500px] lg:h-[calc(100vh-112px)] costumwidth2">
+    <div className="relative h-[calc(100vh-80px)] md:h-[calc(100vh-112px)] costumwidth2">
       <Image
         src={imageURL}
         alt="Slide"

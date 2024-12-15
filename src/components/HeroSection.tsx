@@ -76,7 +76,7 @@ const HeroSection = () => {
   }
   return (
     <>
-      <div className="lg:h-[calc(100vh-112px)] border">
+      <div className="md:h-[calc(100vh-112px)] h-[calc(100vh-80px)] border">
         <Slider {...settings} className="lg:h-full custom-width ">
           {data.map((items, index) => {
             return <HeroCarusel imageURL={items.image} text={items.text} key={index} />
